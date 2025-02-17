@@ -1,0 +1,126 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.header {
+    text-align: center;
+    font-family: Impact;
+    background-color: rgb(27, 84, 221);
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+
+.flex_header {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: column;
+    width: 480px;
+}
+
+.container {
+    grid-template-columns: 50% repeat(3, 1fr);
+    background-color: white;
+    text-align: center;
+
+    padding-bottom: 30px;
+}
+
+.sections {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    width: 480px;
+    gap: 2%;
+}
+
+@media screen and (max-width: 768px){
+    .sections {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        width: 240px;
+        gap: 2%;
+    }
+}
+
+.textpropal {
+    opacity: 85%;
+}
+
+.text h2 {
+    font-size: 24px;
+}
+
+.text h1 {
+    font-size: 36px;
+}
+
+.text {
+    font-size: 14px;
+    font-family: Inter;
+}
+
+.main_text {
+    text-align: left;
+}
+
+.CTA {
+    padding-top: 20px;
+}
+
+.CTA_head{
+    width: 110px;
+    height: 41px;
+    background-color: white;
+    text-align: center;
+    color: rgb(26, 32, 40);
+    font-family: inter;
+    border: 0cap;
+    border-radius: 2px solid transparent;
+}
+
+.CTA_main{
+    width: 110px;
+    height: 41px;
+    background-color: rgb(27, 84, 221);
+    text-align: center;
+    color: white;
+    font-family: inter;
+    border: 0cap;
+    border-radius: 2px solid transparent;
+}
+
+.instagram {
+    width: 18px;
+    height: 18px;
+}
+
+.img  {
+    width: 240px;
+    height: 240px;
+}
+
+@media screen and (max-width: 768px){
+    .img {
+        width: 240px;
+        height: 240px;
+        object-fit: contain;
+    }
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(232, 232, 232);
+    font-family: inter;
+    color:rgb(38, 38, 38);
+    text-align: center;
+    padding: 1rem;
+}
