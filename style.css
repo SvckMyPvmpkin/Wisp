@@ -1,29 +1,35 @@
 body {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1040px auto 181px;
+    margin: 0;
 }
 
 .header {
+    height: 1040px;
     text-align: center;
-    font-family: Impact;
     background-color: rgb(27, 84, 221);
     color: rgb(255, 255, 255);
     padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content {
+    text-align: center;
+    width: 480px;
 }
 
 .flex_header {
     display: flex;
     justify-content: center;
-    justify-self: center;
     flex-direction: column;
-    width: 480px;
 }
 
 .container {
     grid-template-columns: 50% repeat(3, 1fr);
     background-color: white;
     text-align: center;
-
     padding-bottom: 30px;
 }
 
@@ -37,33 +43,36 @@ body {
     gap: 2%;
 }
 
-@media screen and (max-width: 768px){
-    .sections {
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-self: center;
-        width: 240px;
-        gap: 2%;
-    }
-}
-
 .textpropal {
     opacity: 85%;
 }
 
 .text h2 {
     font-size: 24px;
+    line-height: 29px;
 }
 
 .text h1 {
     font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
 }
 
 .text {
-    font-size: 14px;
     font-family: Inter;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.header_text {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 32px;
+    line-height: 70px;
+    font-weight: 900;
+    font-family: Impact;
+    padding-top: 0;
 }
 
 .main_text {
@@ -81,8 +90,8 @@ body {
     text-align: center;
     color: rgb(26, 32, 40);
     font-family: inter;
-    border: 0cap;
-    border-radius: 2px solid transparent;
+    border: 0;
+    border-radius: 5px;
 }
 
 .CTA_main{
@@ -92,8 +101,14 @@ body {
     text-align: center;
     color: white;
     font-family: inter;
-    border: 0cap;
-    border-radius: 2px solid transparent;
+    border: 0;
+    border-radius: 5px;
+}
+.text_CTA {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
 }
 
 .instagram {
@@ -106,14 +121,47 @@ body {
     height: 240px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 750px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header_content {
+        text-align: center;
+        width: auto;
+    }
+
+    .sections {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        gap: 2%;
+    }
+
+    .Wisp {
+        width: 240px;
+        object-fit: contain;
+        display: flex;
+    }
+
+    .text {
+        width: 240px;
+        text-align: center;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+    }
+
     .img {
         width: 240px;
         height: 240px;
         object-fit: contain;
     }
 }
-
 
 .footer {
     display: flex;
