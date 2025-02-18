@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 1040px auto 181px;
+    grid-template-rows: 1040px auto 200px;
     margin: 0;
 }
 
@@ -143,13 +143,13 @@ body {
     }
 
     .Wisp {
-        width: 240px;
+        width: 100%;
         object-fit: contain;
         display: flex;
     }
 
     .text {
-        width: 240px;
+        width: 100%;
         text-align: center;
         object-fit: contain;
         display: flex;
@@ -164,6 +164,7 @@ body {
 }
 
 .footer {
+    height: 169px;
     display: flex;
     flex-direction: column;
     background-color: rgb(232, 232, 232);
